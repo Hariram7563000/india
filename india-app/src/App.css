@@ -40,3 +40,21 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Keyframe for spinning animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Loader animation styling */
+.loader-svg {
+  animation: spin 1s linear infinite;
+  width: 4rem;
+  height: 4rem;
+  color: #3b82f6; /* Tailwind blue-600 */
+}
